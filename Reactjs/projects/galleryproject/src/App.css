@@ -1,0 +1,24 @@
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.carddesign{
+    height:350px;
+    width: 350px;
+    background-color:bisque;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    
+
+    
+}
+#imgall{
+    width: 350px;
+    height: 230px;
+}

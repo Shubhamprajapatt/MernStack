@@ -1,0 +1,28 @@
+.navbar {
+  background:rgb(52, 47, 47);
+  padding: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-list li a:hover {
+  font-weight: 700;
+  background: #555;
+}
+ul li .active{
+color: blueviolet;
+}

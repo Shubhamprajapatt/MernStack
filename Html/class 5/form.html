@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: #ffd6d6;
+            
+        }
+        
+        .container {
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffd6d6;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        
+        form {
+            font-size: 18px;
+        }
+        
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 250px;
+        }
+        
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        
+        textarea {
+            resize: none;
+        }
+        
+        .dob-input {
+            width: 80px;
+        }
+        
+        .phone-code {
+            display: inline-block;
+            width: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form>
+            <label>Roll no. :</label>
+            <input type="text" required><br>
+
+            <label>Student name:</label>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required><br>
+
+
+            <label>Father's name:</label>
+            <input type="text" required><br>
+
+            <label>Date of birth :</label>
+            <input class="dob-input" type="text" placeholder="Day" required> -
+            <input class="dob-input" type="text" placeholder="Month" required>-
+            <input class="dob-input" type="text" placeholder="Year" required>
+            <span>(DD-MM-YYYY)</span><br>
+
+            <label>Mobile no. :</label>
+            <span class="phone-code">+91</span>
+            <input type="text" required><br>
+
+            <label>Email id :</label>
+            <input type="email" required><br>
+
+            <label>Password :</label>
+            <input type="password" required><br>
+
+            <label>Gender :</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female<br>
+
+            <label>Department :</label>
+            <input type="checkbox"> CSE
+            <input type="checkbox"> IT
+            <input type="checkbox"> ECE
+            <input type="checkbox"> Civil
+            <input type="checkbox"> Mech<br>
+
+            <label>Course :</label>
+            <select>
+        <option>---------------------- Select Current Course's ----------------------</option>
+        <option>B.Tech</option>
+        <option>M.Tech</option>
+        <option>BCA</option>
+        <option>MCA</option>
+      </select><br>
+
+            <label>Student photo </label>
+            <input type="file"><br>
+
+            <label>City :</label>
+            <input type="text" required><br>
+
+            <label>Address :</label>
+            <textarea rows="4" cols="50" required></textarea><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>

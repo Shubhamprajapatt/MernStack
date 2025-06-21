@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stucture form</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="fname">First name</label>
+        <input type="text" name="fname" required id="fname" />
+        <label for="mname">Middile name</label>
+        <input type="text" name="mname" id="mname" placeholder="kumar" />
+        <label for="lname">Last name</label>
+        <input type="text" name="lname" id="lname" />
+      </div>
+      <br />
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <br />
+      <div>
+        <label for="dob">DOB</label>
+        <input type="date" min="1998" required="dob" id="dob" />
+      </div>
+      <br />
+      <div>
+        <label for="year">Passout year</label>
+        <input type="number" name="year" id="year" placeholder="2025" />
+        <label style="padding-right: 15px">Strem name:</label>
+        <input type="checkbox" id="dep1" name="department" value="cse" />
+        <label for="dep1">CSE</label>
+        <input type="checkbox" name="department" id="dep2" value="it" />
+        <label for="dep2">IT</label>
+        <input type="checkbox" name="department" id="dep3" value="ece" />
+        <label for="dep3">ECE</label>
+        <input type="checkbox" name="department" id="dep4" value="civil" />
+        <label for="dep4">CIVIL</label>
+        <input type="checkbox" name="department" id="dep5" value="mech" />
+        <label for="dep5">MECH</label>
+      </div>
+      <br />
+      <div>
+        <label for="resume">Upload Resume</label>
+        <input type="file" required name="resume" id="resume" />
+        <label>Select Technology from drop down </label>
+        <select multiple size="3">
+          <option value="python">Python</option>
+          <option value="c c++">C C++</option>
+          <option value="java">java</option>
+          <option value="react">React</option>
+          <option value="mern">Mern</option>
+          <option value="next">Nextjs</option>
+          <option value="mern"></option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="pro">write about your project</label>
+        <textarea minlength="150 words" required name="pro" id="pro"></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="mob">Mobile No.</label>
+        <input
+          type="tel"
+          minlength="10"
+          maxlength="12"
+          required
+          id="mob"
+          name="mob"
+        />
+        <label for="inc">Income </label>
+        <input type="number" name="inc" id="inc" />
+      </div>
+      <br />
+      <div>
+        <label for="pass">Password</label>
+        <input type="password" minlength="5" required name="pass" id="pass" />
+        <label for="cpass">confirm password</label>
+        <input type="password" name="cpass" id="cpass" />
+      </div>
+      <br />
+      <div>
+        <input type="submit" name="sub" id="sub" />
+        <input type="reset" name="reset" id="reset" />
+        <button>edit</button>
+      </div>
+      <br />
+      <div>
+        <label for="city">city</label>
+        <input type="city" name="city" id="city" placeholder="Indore" />
+        <select multiple size="3">
+          <option value="indore">Indore</option>
+          <option value="dewas">Dewas</option>
+          <option value="bhopal">Bhopal</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label>Select full stack Course</label>
+        <input type="checkbox" id="dep1" name="department" value="Mern Stack" />
+        <label for="dep1">Mern Stack</label>
+        <input type="checkbox" name="department" id="dep2" value="Java Stack" />
+        <label for="dep2">Java Stack</label>
+      </div>
+      <br />
+      <div>
+        <label for="ser">search</label>
+        <input
+          type="search"
+          name="ser"
+          id="ser"
+          placeholder="search item here"
+        />
+      </div>
+    </form>
+  </body>
+</html>

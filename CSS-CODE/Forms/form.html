@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: lightpink;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="box">
+      <h1>Student Registration Form</h1>
+      <div>
+        <label style="padding-right: 60px" for="roll">Roll no:</label>
+        <input
+          style="background-color: aliceblue"
+          type="text"
+          id="roll"
+          name="roll"
+        />
+      </div>
+      <br />
+      <div>
+        <label style="padding-right: 20px" for="fname"> Student Name: </label>
+        <input
+          style="background-color: aliceblue"
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="first name"
+        />
+        <input
+          style="background-color: aliceblue"
+          type="text"
+          id="lname"
+          name="lname"
+          placeholder="last name"
+        />
+      </div>
+      <br />
+      <div>
+        <label style="padding-right: 29px" for="father">Father name:</label>
+        <input
+          style="background-color: aliceblue"
+          type="text"
+          name="father"
+          id="father"
+        />
+      </div>
+      <br />
+      <div>
+        <label style="padding-right: 75px" for="dob">DOB</label>
+        <input
+          style="background-color: aliceblue"
+          type="number"
+          id="dob"
+          name="dob"
+          placeholder="Day"
+        />
+        <input
+          style="background-color: aliceblue"
+          type="number"
+          name="dob"
+          id="dob"
+          placeholder="Month"
+        />
+        <input
+          style="background-color: aliceblue"
+          type="number"
+          name="dob"
+          id="dob"
+          placeholder="Year"
+        />
+      </div>
+      <br />
+
+      <div>
+        <label style="padding-right: 29px" for="mob">Mobile: +91</label>
+        <input
+          style="background-color: aliceblue"
+          type="tel"
+          id="mob"
+          name="mob"
+        />
+      </div>
+      <br />
+
+      <div>
+        <label style="padding-right: 60px" for="email">Email :</label>
+        <input
+          style="background-color: aliceblue"
+          type="email"
+          name="email"
+          id="email"
+        />
+      </div>
+      <br />
+
+      <div>
+        <label style="padding-right: 35px" for="pass">Password :</label>
+        <input
+          style="background-color: aliceblue"
+          type="password"
+          id="pass"
+          name="pass"
+        />
+      </div>
+      <br />
+
+      <div>
+        <label style="padding-right:40px">Gender :</label>
+        <input type="radio" id="gender1" name="gender" value="male" />
+        <label for="gender1">Male</label>
+        <input type="radio" id="gender2" name="gender" value="female" />
+        <label for="gender2">Female</label>
+      </div>
+      <br />
+
+      <div>
+        <label style="padding-right: 15px">Department:</label>
+        <input type="checkbox" id="dep1" name="department" value="cse" />
+        <label for="dep1">CSE</label>
+        <input type="checkbox" name="department" id="dep2" value="it" />
+        <label for="dep2">IT</label>
+        <input type="checkbox" name="department" id="dep3" value="ece" />
+        <label for="dep3">ECE</label>
+        <input type="checkbox" name="department" id="dep4" value="civil" />
+        <label for="dep4">CIVIL</label>
+        <input type="checkbox" name="department" id="dep5" value="mech" />
+        <label for="dep5">MECH</label>
+      </div>
+      <br />
+      <div>
+        <label style="padding-right: 40px" for="Course">Course :</label>
+        <select style="background-color: aliceblue" id="Course" name="course" multiple size="1">
+          <option value="btech">BTech</option>
+          <option value="it">IT</option>
+          <option value="ec">EC</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="student">Student photo</label>
+        <input  style="background-color: aliceblue" type="file" name="student" id="student" />
+      </div>
+      <br />
+      <div>
+        <label style="padding-right: 60px" for="city">City</label>
+        <input  style="background-color: aliceblue" type="text" name="city" id="city" />
+      </div>
+      <br />
+      <div>
+        <label style="padding-right: 25px"  for="add">Address :</label>
+        <textarea style="background-color: aliceblue" name="add" id="add"></textarea>
+      </div>
+      <br />
+      <br />
+      <button>Register</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+     .container{
+        width:60%;
+        margin: 0 auto;
+        height: auto;
+        background-color:antiquewhite;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+     }
+     .container > div{
+        width: 200px;
+        height: 200px;
+     }
+     img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+     }

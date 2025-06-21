@@ -1,0 +1,55 @@
+
+body{
+    background-color: antiquewhite;
+}
+.box{
+    position: relative;
+}
+
+.agarbati{
+    height: 90px;
+    width: 10px;
+    background-color:black;
+    margin: 0 auto;
+    margin-top: 50%;
+    position: relative;
+    
+    }
+.fire{
+    height: 10px;
+    width: 10px;
+    background-color: red;
+  
+}
+.smokebox{
+    position: absolute;
+}
+ .smoke1{
+    height: 10px;
+    width: 10px;
+    background-color:gray;
+    opacity: 70%;
+    border-radius: 50px;
+    box-shadow: gray 0px 0px 20px 20px;
+    margin: 0 auto;
+    animation-name: smokeash;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    }
+    
+
+ @keyframes smokeash {
+    25%{
+transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(-50px);  
+    }
+    75%{
+        transform: translateY(-60px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+} 

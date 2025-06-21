@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple form</title>
+    <style>
+      .continer {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        background-color: lightblue;
+      }
+
+      .box {
+        margin: 0 auto;
+        padding-left: 35%;
+        margin-top: 30px;
+      }
+
+      form {
+        display: inline-block;
+        background-color: aliceblue;
+        padding: 30px;
+        height: 600px;
+        border: 2px solid green;
+      }
+
+      #submit {
+        background-color: lightgreen;
+        width: 100%;
+      }
+
+      #name {
+        width: 100%;
+      }
+
+      #email {
+        width: 100%;
+      }
+
+      #age {
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="continer">
+      <div class="box">
+        <form>
+          <label for="name">Enter Your Name</label><br />
+          <input type="text" id="name" placeholder="enter name" />
+          <br /><br />
+          <label for="email">Enter your Email</label><br />
+          <input type="email" id="email" placeholder="enter email" />
+
+          <br /><br />
+          <label for="age">Enter Your Age</label><br />
+          <input type="text" id="age" placeholder=" enter age" />
+          <br /><br />
+          <label for="opt">Which option best describe you?</label><br />
+          <select name="select" id="opt" style="width: 80%; padding: 3px">
+            <option value="student">Student</option>
+            <option value="married">married</option>
+            <option value="unmarried">unmarried</option>
+          </select>
+          <br /><br />
+          <label for="opt1"
+            >Would you recommend geekforgeeks to your friend?</label
+          ><br />
+          <label> <input type="radio" name="suggest" id="opt1" />yes</label
+          ><br />
+          <label> <input type="radio" name="suggest" id="opt1" />no</label
+          ><br />
+          <label> <input type="radio" name="suggest" id="opt1" />may be</label
+          ><br />
+          <br />
+          <label>Languages and Frameworks known (Check all that apply) </label
+          ><br />
+          <label><input type="checkbox" value="c" />c</label><br />
+          <label><input type="checkbox" value="c++" />c++</label><br />
+          <label><input type="checkbox" value="html" />html</label><br />
+          <label><input type="checkbox" value="java" />java</label><br />
+          <label><input type="checkbox" value="css" />css</label><br />
+          <label><input type="checkbox" value="php" />php</label><br />
+          <label><input type="checkbox" value="dsa" />dsa</label><br />
+          <br />
+          <input type="submit" id="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

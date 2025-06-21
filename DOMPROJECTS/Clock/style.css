@@ -1,0 +1,145 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  background: rgb(60, 185, 185);
+}
+
+.center {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 48%;
+  left: 49%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 10;
+}
+
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  /* transform: rotate(0deg); */
+  /* background-color: #fff; */
+  border-radius: 6px;
+}
+
+.hour {
+  height: 60px;
+  width: 8px;
+  background: #f44336;
+  z-index: 3;
+}
+
+.minute {
+  height: 90px;
+  width: 6px;
+  background: #2196f3;
+  z-index: 2;
+}
+
+.second {
+  height: 110px;
+  width: 2px;
+  background: yellow;
+  z-index: 1;
+}
+
+#time12
+{
+    position:absolute;
+    top: 0;
+    left: 48%;
+
+}
+#time11
+{
+    position:absolute;
+     top: 8%;
+    left: 24%;
+
+}
+#time10
+{
+    position:absolute;
+    top: 24%;
+    left: 8%;
+
+}
+
+#time9
+{
+     position:absolute;
+    bottom: 48%;
+    left: 1%;
+}
+#time8
+{
+     position:absolute;
+    bottom: 24%;
+    left: 8%;
+}
+#time7
+{
+     position:absolute;
+    bottom: 8%;
+    left: 24%;
+}
+#time6
+{
+    position:absolute;
+    bottom: 0;
+    left: 48%;
+}
+#time5
+{
+    position:absolute;
+    bottom: 8%;
+    right: 24%;
+}
+#time4
+{
+    position:absolute;
+    bottom: 24%;
+    right: 8%;
+}
+
+#time3
+{
+     position:absolute;
+    bottom: 48%;
+    right: 1%;
+  
+}
+#time2
+{
+     position:absolute;
+    top: 24%;
+    right: 8%;
+  
+}
+#time1
+{
+     position:absolute;
+    top: 8%;
+    right: 24%;
+  
+}
+.timeHour
+{
+  /* border: 1px solid black; */
+  font-weight: bold;
+}

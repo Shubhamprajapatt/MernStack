@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+<div id="container">
+
+    <form action="">
+       <h3>Data Entry</h3>
+        <br>
+        <label class="fname" for="fname">Name </label>
+        <input class="fname" type="text" name="fname" id="fname" required>
+        <br>
+        <br>
+        <label class="age" for="age">Age</label>
+        <input class="age" type="number" name="age" id="age" min="1" max="100">
+        <br>
+        <br>
+        <label class="email" for="email">Email</label>
+        <input class="email" type="email" name="email" id="email">
+        <br>
+        <br>
+        <label class="dob" for="dob">DOB</label>
+        <input class="dob" type="date" name="dob" id="dob" min="1996-04-05" max="2025-04-05">
+        <br>
+       <br>
+
+        <label class="number" for="number">Mobile number</label>
+        <input class="number" type="tel" name="number" id="number" minlength="9" maxlength="12" pattern="[0-9]{10}" >
+       
+        <br>
+        <br>
+        <label class="password" for="pass">Password</label>
+        <input class="password" type="password" name="pass" id="pass" minlength="5">
+        <br>
+        <br>
+       
+  
+        <button id="submitButton" type="submit">Submit</button>
+       
+        <br>
+    </form>
+</div>
+    
+</body>
+</html>
